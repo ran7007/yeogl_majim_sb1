@@ -111,7 +111,7 @@ body { line-height: 1.5; color: #323232; overflow-x: hidden; }
 .service_text .service_box2 img { width: 80%;}
 
 .box_left_1 dt {background: url(../img/section2/icon1.png) no-repeat right 180px center;}
-.box_left_2 dt {background: url(../img/section2/icon2.png) no-repeat right 154px center;}
+.box_left_2 dt {background: url(../img/section2/icon2.png) no-repeat right 154px center / 22px 40px;}
 .box_left_3 dt {background: url(../img/section2/icon3.png) no-repeat right 151px center;}
 .box_right_1 dt {background: url(../img/section2/icon4.png) no-repeat left 174px top -1px;}
 .box_right_2 dt {background: url(../img/section2/icon5.png) no-repeat left 180px top 7px;}
@@ -127,4 +127,45 @@ body { line-height: 1.5; color: #323232; overflow-x: hidden; }
   .service_text {display: flex; flex-direction: column; align-items: center;}
   .service_text > div {width: 80%; align-items: center; display: flex; flex-direction: column;}
   .service_text .service_box1 dl, .service_text .service_box3 dl  { background: #fff; text-align: center; padding: 30px; box-shadow: 3px 2px 8px rgba(0,0,0,0.30); border-radius: 20px; margin-bottom: 30px; height: auto; width: 90%;}
+
+  .service h2 { font-size: 2.5rem; ;}
+.service h2 span {font-size: 3.2rem;}
+
+  .box_left_1 dt {background: url(../img/section2/icon1.png) no-repeat left calc(50% - 100px) top 1px}
+.box_left_2 dt {background: url(../img/section2/icon2.png) no-repeat left calc(50% - 88px) top 1px / 22px 40px;;}
+.box_left_3 dt {background: url(../img/section2/icon3.png) no-repeat left calc(50% - 100px) center;}
+.box_right_1 dt {background: url(../img/section2/icon4.png) no-repeat left calc(50% - 105px) top -1px;}
+.box_right_2 dt {background: url(../img/section2/icon5.png) no-repeat left calc(50% - 103px) top 7px;}
+.box_right_3 dt {background: url(../img/section2/icon6.png) no-repeat left calc(50% - 105px)top 5px;}
+}
+
+/* map */
+.map {background: var(--main2-color) url(../img/section3/back_img.png)no-repeat right bottom; padding: 200px 0;}
+.map .inner {display: flex; justify-content: center; align-items: center; color: #fff; gap: 20px;}
+.map_img {max-width: 680px;}
+.map img {width: 100%;}
+.map .text p{ font-size: 2.2rem; position: relative; }
+.map .text p::before {content: ""; border-top: 3px solid #fff; width: 80px; display: block; border-radius: 50px; top: -3px; position: absolute; }
+.map .text dt {font-size: 5rem; font-weight: 600; padding: 8px 0 40px 0;}
+.map .text dd { font-size: 1.8rem;}
+
+@media (max-width:1250px) {
+  .map .text p {font-size: 2rem;}
+  .map .text dt {font-size: 4.5rem;}
+  .map .text dd {font-size: 1.5rem;}
+}
+
+@media (max-width:1100px) {
+  .map .inner { flex-direction: column; text-align: center;}
+  .map .text p {display: inline-block;}
+  .map .text p::before{left:0;}
+  .map .text dl {order: 1; text-align: center;}
+  .map_img {order: 2; display: flex; justify-content: center; transform: translateX(50px);}
+}
+
+@media (max-width:750px) {
+  .map .text p {font-size: 1.5rem;}
+  .map .text p::before{width: 60PX;}
+  .map .text dt {font-size: 3.5rem; padding: 4px 0 20px 0;}
+  .map .text dd {font-size: 1.2rem;}
 }
